@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --blue: rgba(28, 83, 131, 1);
+}
+
+.mt-2{
+    margin-top: 20px;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    min-height: 100vh;
+}
+
+.container{
+    width: 1000px;
+    height: 100%;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav .left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.header-nav .left a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav .left a ion-icon{
+    line-height: 20px;
+    font-size: 30px;
+    color: var(--blue);
+}
+
+.header-nav .left input{
+    flex-grow: 1;
+    height: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.header-nav .right{
+    display: flex;
+    margin-left: 50px;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-nav .right ion-icon{
+    font-size: 30px;
+    line-height: 15px;
+    color: var(--blue);
+}
+
+.header-nav .right .drop-down{
+    position: relative;
+
+}
+
+.header-nav .right .drop-down .icon:hover + .menu-item,
+.header-nav .right .drop-down .menu-item:hover{
+    transition: all .5s;
+    display: block;
+}
+
+.header-nav .right .drop-down .menu-item{
+    position: absolute;
+    display: none;
+    justify-content: space-evenly;
+    width: 200px;
+    list-style-type: none;
+    background-color: #dedede;
+    padding: 10px;
+    transition: all .5s;
+    z-index: 10;
+}
+
+.header-nav .right .drop-down .menu-item li{
+    width: 100%;
+}
+
+.header-nav .right .drop-down .menu-item a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+    color: var(--blue);
+    font-size: 14px;
+}
+
+.header-nav .right .drop-down .menu-item a .text{
+    flex-grow: 1;
+}
+
+.logo-kiri{
+    color: var(--blue);
+}
+.logo-kanan{
+    color: orange;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.cards .card{
+    border: 1px solid #dedede;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cards .card .card-content{
+    padding: 20px;
+}
+
+.btn{
+    margin: 10px 0;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-add-keranjang{
+    background-color: green;
+    color: white;
+}
+
+
+.page-auth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form{
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--blue);
+}
+
+.container-form h1{
+    color: white;
+    text-align: center;
+}
+
+.container-form .form-group{
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.container-form .form-group input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #dedede;
+    padding-left: 40px;
+}
+
+
+
+.container-form .form-group .icon,
+.container-form .form-group .icon-eye{
+    position: absolute;
+    font-size: 30px;
+}
+
+
+.container-form .form-group .icon{
+    left: 25px;
+}
+
+.container-form .form-group .icon-eye{
+    top: 20px;
+    right: 30px;
+}
+
+.container-form .form-group .icon-eye:hover{
+    cursor: pointer;
+}
+
+.container-form button{
+    background-color: orange;
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+}
+
+.imgBox{
+    position: relative;
+    width: 100%;
+    height: 272px;
+    overflow: hidden;
+}
+
+.imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
